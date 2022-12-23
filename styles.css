@@ -157,7 +157,7 @@ nav > ul {
     margin: 100px auto 20px;
 }
 
-.about-section > p {
+.about-section-body {
     color: whitesmoke;
     width: 70%;
     text-align: justify;
@@ -181,10 +181,10 @@ nav > ul {
     margin: 100px auto 20px;
 }
 
-.education-section > ul > li {
+.education-section-body {
     text-align: justify;
     width: 70%;
-    margin: 10px auto;
+    margin: 10px auto 10px;
 }
 
 /**************** EXPERIENCE SECTION **************/
@@ -204,11 +204,11 @@ nav > ul {
     margin: 100px auto 20px;
 }
 
-.experience-section > ul > li {
+.experience-section-body  {
     text-align: justify;
     width: 70%;
     /* margin: auto; */
-    margin: 10px auto;
+    margin: 10px auto 10px;
 }
 
 /**************** PROJECTS SECTION **************/
