@@ -1,160 +1,398 @@
+<!-- //
+Task 40 - HTML Overview
+Compulsory Task
+    
+● Create an HTML page called index.html. You can use most code editors to
+do this, including Eclipse, Sublime, Visual Studio Code, etc.
+
+● On this page, add any elements you would like to create a jpgage that
+acts as an online CV. This is your personal jpgage, so feel free to customise
+it to suit your needs, but make sure that you include the following:
+
+○ A short bio: add a short (no more than about three paragraphs)
+description of yourself. Who are you? What is your experience? What
+are your passions? What motivates you? What is it that you would
+most like to do? Etc.
+
+○ Your contact details: e.g. name, contact number, email address, links
+to any of your (professional) social media including LinkedIn. An
+image of yourself.
+○ A list of your skills and competencies.
+○ Describe your education.
+○ Describe your work experience.
+○ Describe some projects that you have worked on. Add links to the
+code (in GitHub).
+
+○ Add links to any blog posts or articles that you have written. 
+//-->
+
+<!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0"/>
+        <title>Persoal Portfolio jpgage</title>
+        <link href="./styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="portfolio-container">
+            
+            <!-- Start NAV -->
+            <header>
+                
+                <nav id="navbar" class="nav">
+                    <ul class="nav-list">
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Portfolio Webpage</title>
-    <link href="./styles.css" rel="stylesheet" />
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+                        <li>
+                            <a href="#education">Education</a>
+                        </li>
+                        <li>
+                            <a href="#experience">Experience</a>
+                        </li>
+                        <li>
+                            <a href="#projects">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#skills">Skills</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
 
-<body>
-    <div class="portfolio-container">
-        <!-- START NAV -->
-        <header>
-            <nav id="navbar" class="nav">
-                <ul class="nav-list">
+            <!-- End NAV -->
+
+            <!-- Start: About section - a short bios -->
+
+            <section id="about" class="about-section">
+                <h2 class="about-section-header">About</h2>
+                <div class="about-image">
+                    <img src="./images/about.jpg" border="0" width="250" />
+                </div>
+                <p>
+                    <span class="myself">Eddy Chan</span> is an enthusiastic
+                    <strong>software developer</strong> who is eager to
+                    contribute to team success through industriousness,
+                    attention to detail and excellent problem-solving skills.
+                </p>
+                <p>
+                    I am eager to contribute to team success through
+                    industriousness, attention to detail and excellent
+                    problem-solving skills. Clear understanding and application
+                    of Software Development and proficiency in technical
+                    languages of Python. Java, MySQL, HTML CSS.
+                </p>
+                <p>
+                    With a completed Bachelor’s degree in Management Science and
+                    experience in the customer service field, I decided to
+                    transition into a career in the tech space. As a result, I
+                    enrolled in a
+                    <a
+                        href="https://www.hyperiondev.com/bootcamps/software-engineering/"
+                        target="_blank">Software Engineering</a>
+                    course at
+                    <a href="https://www.hyperiondev.com/" target="_blank">HyperionDev</a>.
+                </p>
+            </section>
+            <!-- End: About me - short bios -->
+
+            <!-- Start: Education -->
+            <!-- Describe your education. -->
+            <section id="education" class="education-section">
+                <h2 class="education-section-header">Education</h2>
+                <div class="education-image">
+                    <img src="./images/education.jpg" border="0" width="300" />
+                </div>
+                <ul>
                     <li>
-                        <a href="#welcome">About</a>
+                        <span class="date">Dec 2022 - Mar 2023</span>: Software Engineering Bootcamp at
+                        <a href="https://www.hyperiondev.com/" target="_blank">HyperionDev</a>
                     </li>
                     <li>
-                        <a href="#projects">Projects</a>
+                        <span class="date">Sep 2007 - Feb 2012</span>: Diploma of Higher Education in
+                        Accounting at <a href="https://www.ive.edu.hk/ivesite/html/en/campus/kt_overview.html" target="_blank">IVE (Kwun Tong)</a>
                     </li>
                     <li>
-                        <a href="#contact">Contact</a>
+                        <span class="date">Sep 1997 - Jun 2000</span>: Bachelor's in Management Sciences
+                        at <a href="https://www.cityu.edu.hk/" target="_blank">City University of Hong Kong</a>
                     </li>
                 </ul>
-            </nav>
-        </header>
-        <!-- END NAV -->
+            </section>
 
-        <!-- START WELCOME SECTION -->
+            <!-- End: Education section -->
 
-        <section id="welcome" class="welcome-section">
-            <h1>Hey I am Eddy Chan</h1>
-            <p>an software developer</p>
-        </section>
+            <!-- Start: Experience section -->
+            <!-- Describe your work experience -->
+            <!--
+                The duties of each job are not mentioned in the page. Keep it be precise and concise.
+            -->
 
-        <!-- END WELCOME SECTION -->
+            <section id="experience" class="experience-section">
+                <h2 class="experience-section-header">Experience</h2>
+                <div class="experience-image">
+                    <img src="./images/experience.jpg" border="0" width="300"/>
+                </div>
+                <ul>
+                    <li>
+                        <span class="date">Feb 2022 - Aug 2022</span>: Accounts Clerk (Accounts
+                        Receivable), Brink's Hong Kong Ltd
+                        <!-- <ul>
+                        <li>
+                            Handled accounts receivables' receipts and bank
+                            reconciliation
+                        </li>
+                        <li>
+                            Followed up on customers' inquiries about their
+                            settlement status
+                        </li>
+                        <li>
+                            Assisted the team to perform administration tasks
+                            and other clerical duties
+                        </li>
+                    </ul> -->
+                    </li>
+                    <li>
+                        <span class="date">Mar 2009 - Feb 2022</span>: Assistant Taxation Officer, Inland
+                        Revenue Department the Government of HKSAR
+                        <!-- <ul>
+                        <li>
+                            Assisted the Assessors in processing assessment,
+                            objection, and holdover claims
+                        </li>
+                        <li>
+                            Issued queries/replies and conducted online instant
+                            updating transactions
+                        </li>
+                        <li>Provided IT supports to the divisions</li>
+                    </ul> -->
+                    </li>
 
-        <!-- START PROJECTS SECTION -->
+                    <li>
+                        <span class="date">Dec 2007 - Sep 2008</span>: Account and Administrative Clerk,
+                        AMCO Cargo Systems Ltd
+                        <!-- <ul>
+                        <li>
+                            Performed book-keeping functions and handle
+                            invoices, accounts receivable, and accounts payable
+                        </li>
+                        <li>
+                            Assisted in the reconciliation of account balances,
+                            month-end closing, and annual reporting and liaison
+                            with auditors
+                        </li>
+                        <li>
+                            Performed administrative works, office maintenance,
+                            stationery/office supplies orderings, fixed assets
+                            registers
+                        </li>
+                    </ul> -->
+                    </li>
 
-        <section id="projects" class="projects-section">
-            <h2 class="projects-section-header">These are some of my projects</h2>
+                    <li>
+                        <span class="date">Jun 2005 - Apr 2006</span>: Senior Estate Assistant, Kerry
+                        Property Management Services Limited
+                        <!-- <ul>
+                        <li>
+                            Handled customer inquiries & complaints and
+                            cultivate a harmonious relationship with occupants
+                        </li>
+                        <li>
+                            Assisted the management team to implement the
+                            day-to-day management functions of the residential
+                            property & car park
+                        </li>
+                        <li>
+                            Provided quality services to residents in the
+                            clubhouse
+                        </li>
+                    </ul> -->
+                    </li>
 
-            <div class="projects-grid">
-                <a href="http://bit.ly/3WB1Uru" target="_blank" class="project project-tile">
-                    <img class="project-image"
-                        src="https://github.com/cwchan0212/cwchan0212.github.io/blob/main/images/project1.gif?raw=true"
-                        alt="project" />
-                    <p class="project-title">
-                        <span class="code">&lt;</span>
-                        Inventory System - Python (OOP)
-                        <span class="code">&#47;&gt;</span>
-                    </p>
-                </a>
-                <a href="http://bit.ly/3G5SrDg" target="_blank" class="project project-tile">
-                    <img class="project-image"
-                        src="https://github.com/cwchan0212/cwchan0212.github.io/blob/main/images/project2.gif?raw=true"
-                        alt="project" />
-                    <p class="project-title">
-                        <span class="code">&lt;</span>
-                        Task Manager - Python
-                        <span class="code">&#47;&gt;</span>
-                    </p>
-                </a>
-                <a href="https://bit.ly/3gCEnXH" target="_blank" class="project project-tile">
-                    <img class="project-image"
-                        src="https://github.com/cwchan0212/cwchan0212.github.io/blob/main/images/project3.gif?raw=true"
-                        alt="project" />
-                    <p class="project-title">
-                        <span class="code">&lt;</span>
-                        Exchange Rate Checking - React
-                        <span class="code">&#47;&gt;</span>
-                    </p>
-                </a>
-                <a href="https://codepen.io/cwchan0212/pen/zYWYzpm" target="_blank" class="project project-tile">
-                    <img class="project-image"
-                        src="https://github.com/cwchan0212/fcc-wiki-viewer/blob/main/src/3.jpg?raw=true"
-                        alt="project" />
-                    <p class="project-title">
-                        <span class="code">&lt;</span>
-                        JavaScript Calculator
-                        <span class="code">&#47;&gt;</span>
-                    </p>
-                </a>
-                <a href="https://codepen.io/cwchan0212/details/XWEgKjp" target="_blank" class="project project-tile">
-                    <img class="project-image"
-                        src="https://github.com/cwchan0212/fcc-wiki-viewer/blob/main/src/4.jpg?raw=true"
-                        alt="project" />
-                    <p class="project-title">
-                        <span class="code">&lt;</span>
-                        Pointer with D3
-                        <span class="code">&#47;&gt;</span>
-                    </p>
-                </a>
+                    <li>
+                        <span class="date">Oct 2003 - Jun 2005</span>: Assistant Property Officer, Kong
+                        Shum Union Property Management Company Limited
+                        <!-- <ul>
+                        <li>
+                            Handled the building operation work independently
+                            and provide high-quality property management
+                            services
+                        </li>
+                        <li>
+                            Arranged the meetings and handle the administrative
+                            work for the landlords
+                        </li>
+                        <li>
+                            Handled urgent issues, landlords' inquiries, and
+                            complaints
+                        </li>
+                    </ul> -->
+                    </li>
 
-                <a href="https://codepen.io/cwchan0212/pen/oNqWVya" target="_blank" class="project project-tile">
-                    <img class="project-image"
-                        src="https://github.com/cwchan0212/fcc-wiki-viewer/blob/main/src/6.jpg?raw=true"
-                        alt="project" />
-                    <p class="project-title">
-                        <span class="code">&lt;</span>
-                        Choropleth Map w/ D3
-                        <span class="code">&#47;&gt;</span>
-                    </p>
-                </a>
-            </div>
+                    <li>
+                        <span class="date">Oct 2000 - Jun 2001</span>: Web Developer, PCC Skyhorse Ltd
+                        <!-- <ul>
+                        <li>
+                            Built well-designed, testable, and efficient code by
+                            using the best software development practices
+                        </li>
+                        <li>
+                            Integrated data from various back-end services and
+                            databases
+                        </li>
+                        <li>
+                            Cooperated with web designers to match visual design
+                            intent
+                        </li>
+                    </ul> -->
+                    </li>
 
-            <a href="https://codepen.io/FreeCodeCamp/" class="btn btn-show-all" target="_blank">Show all<i
-                    class="fas fa-chevron-right"></i></a>
-        </section>
+                    <li>
+                        <span class="date">Jun 2000 - Sep 2000</span>: Web Programmer, Avanti Network
+                        Consultancy Ltd
+                        <!-- <ul>
+                        <li>
+                            Built fully functional programs writing clean and
+                            testable code
+                        </li>
+                        <li>Organised testing and debugging regularly</li>
+                        <li>
+                            Worked together with internal teams to identify
+                            system requirements
+                        </li>
+                    </ul> -->
+                    </li>
+                </ul>
+            </section>
 
-        <!-- END PROJECTS SECTION -->
+            <!-- End: Experience section -->
 
+            <!-- Start: Projects section -->
+            <!-- ○ Describe some projects that you have worked on. Add links to the code (in GitHub). -->
+            <!-- ○ Add links to any blog posts or articles that you have written.  -->
 
-        <!-- START CONTACT SECTION -->
+            <section id="projects" class="projects-section">
+                <h2 class="projects-section-header">Projects</h2>
+                <p class="projects-section-body">
+                    During this course, I built over 40
+                    <a href="https://hyperiondev.com/portfolio/124100/" target="_blank">tasks</a>
+                    and 5 capstone <a href="#projects">projects</a> in these
+                    programming languages involving problem-solving and complex
+                    mathematics. Hese are some of my projects (See more in my
+                    <a href="https://github.com/cwchan0212/" target="_blank">github</a> or 
+                    <a href="https://codepen.io/cwchan0212" target="_blank">codepen</a>)
+                </p>
 
-        <section id="contact" class="contact-section">
-            <div class="contact-section-header">
-                <h2>Let's work together...</h2>
-                <p>How do you take your coffee?</p>
-            </div>
-            <div class="contact-links">
-                <a href="#" target="_blank" class="btn contact-details"><i
-                        class="fab fa-facebook-square"></i> Facebook</a>
-                <a id="profile-link" href="#" target="_blank"
-                    class="btn contact-details"><i class="fab fa-github"></i> GitHub</a>
-                <a href="#" target="_blank" class="btn contact-details"><i
-                        class="fab fa-twitter"></i> Twitter</a>
-                <a href="#"
-                    class="btn contact-details"><i class="fas fa-at"></i> Send a mail</a>
-                <a href="tel:555-555-5555" class="btn contact-details"><i class="fas fa-mobile-alt"></i> Call me</a>
-            </div>
-        </section>
+                <div class="projects-grid">
+                    <a href="http://bit.ly/3WB1Uru">
+                        <img
+                            class="project-image"
+                            src="./images/project1.gif"
+                        />
 
-        <!-- END CONTACT SECTION --> 
+                        <p class="project-title">
+                            Inventory System - Python (OOP)
+                        </p></a
+                    >
 
+                    <a href="http://bit.ly/3G5SrDg">
+                        <img
+                            class="project-image"
+                            src="./images/project2.gif"
+                        />
 
-        <footer>
-            <p>
-              **This is just a fake portfolio. All the projects and contact details
-              given are not real.
-            </p>
-            <p>
-              &copy; Modified template of 
-              <a href="https://www.freecodecamp.com/" target="_blank"
-                >freeCodeCamp <i class="fab fa-free-code-camp"></i
-              ></a>
-            </p>
-          </footer>
+                        <p class="project-title">Task Manager - Python</p></a
+                    >
 
-    </div>
-    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
-</body>
+                    <a href="https://bit.ly/3gCEnXH">
+                        <img
+                            class="project-image"
+                            src="./images/project3.gif"
+                        />
 
+                        <p class="project-title">
+                            Exchange Rate Checking - React
+                        </p></a
+                    >
+                </div>
+            </section>
+            <!-- End: Projects section -->
+
+            <!-- Start: Skills section-->
+            <!-- A list of your skills and competencies. -->
+
+            <section id="skills" class="skills-section">
+                <h2 class="skills-section-header">Skills</h2>
+                <div class="skill-image">
+                    <img src="./images/skills.jpg" border="0" width="300" />
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-grid-soft">
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Problem Solving</li>
+                        <li>Communication</li>
+                        <li>Organisation</li>
+                        <li>Attention to detail</li>
+                        <li>Customer Services</li>
+                        <li>Project Management</li>
+                        <li>Tools: Google, Microsoft, Zoom, Skype, Trello</li>
+                    </ul>
+                </div>
+                <div class="skill-grid-tech">
+                    <h3>Tech Stack</h3>
+                    <ul>
+                        <li>Python / Java</li>
+                        <li>HTML / CSS / Bootstrap</li>
+                        <li>React / Nodejs / Express</li>
+                        <li>MS SQL / mySQL / PostreSQL</li>
+                        <li>MongoDB</li>
+                        <li>Bash / Git</li>
+                        <li>Excel VBA</li>
+                    </ul>
+                </div>
+                </div>
+            </section>
+            <!-- End: Skills section-->
+
+            <!-- Start: Contact section-->
+            <!-- ○ Your contact details: e.g. name, contact number, email address, links
+            to any of your (professional) social media including LinkedIn. An
+            image of yourself. -->
+
+            <section id="contact" class="contact-section">
+                <h2 class="contact-section-header">Contact</h2>
+                <div class="contact-image">
+                    <img src="./images/contact.jpg" border="0" width="300" />
+                </div>
+                <p class="contact-section-body">
+                    I am keen to learn new skills and technologies in coding
+                    from different online tutorials such as
+                    <a href="https://www.freecodecamp.com/" target="_blank">freeCodeCamp</a>,
+                    <a href="https://www.w3schools.com/" target="_blank">W3schools</a>
+                    and from
+                    <a href="https://www.datacamp.com/" target="_blank">datacomp</a>. 
+                    Hope I can contribute my skills and qualities to the industry. Let's work together...
+                </p>
+                <div class="contact-grid">
+                <a href="https://www.linkedin.com/in/cwchanst/" target="_blank">LinkedIn</a> | <a href="https://github.com/cwchan0212/" target="_blank">Github</a> |
+                <a href="#">Send a mail</a> | <a href="#">Whatsapp</a></div>
+            </section>
+            <!-- End: Contact section-->
+
+            <!-- Start: Footer section-->
+            <footer>
+                <p>
+                    **This is a demo portfolio. All the projects and contact
+                    details given are real.**
+                </p>
+            </footer>
+            <!-- End: Footer section-->
+        </div>
+    </body>
 </html>
