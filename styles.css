@@ -2,11 +2,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan&family=Roboto&display=swap");
 
-/*****************css variable ***************/
-:root {
-    --project_image: 250;
-}
-
 /**************** all html **************/
 
 * {
@@ -64,7 +59,6 @@ h2 {
 a:link,
 a:visited {
     color: whitesmoke;
-    /* color:rgb(0, 0, 0); */
     text-decoration: none;
 }
 
@@ -80,17 +74,28 @@ ul {
     list-style-type: none;
 }
 
+/**************** p tag **************/
+
+p {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
 /**************** hamburger menu BAR **************/
 
 .header{
-    border-bottom: 1px solid #E2E8F0;
+    border-bottom: 0px solid #E2E8F0;
 }
 
+.navbar > .navbar {
+    display: flex;
+    justify-content: flex-end;
+}
 .navbar {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 0.2rem 1rem;
+    padding: 2rem 1rem;
 }
 
 .hamburger {
@@ -107,12 +112,12 @@ ul {
     background-color: #ffffff;
 }
 
-
-
 .nav-list {
     display: flex;
+    justify-content: flex-end;
+    position: fixed;
     margin-right: 2rem;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
 }
 
@@ -156,7 +161,7 @@ ul {
     }
 
     .nav-item {
-        margin: 2.5rem 0;
+        margin: 1.5rem 0;
     }
 
     .hamburger {
@@ -183,9 +188,11 @@ ul {
 
 nav {
     display: flex;
-    /* justify-content: flex-end; */
+    justify-content: flex-end;
     position: fixed;
     width: 100%;
+
+    
     background-color: rgb(0, 0, 0);
     text-transform: uppercase;
     text-decoration: none;
@@ -208,6 +215,7 @@ nav > ul {
 
 .myself {
     color: coral;
+    font-weight: bold;
 }
 
 .date {
@@ -232,7 +240,7 @@ nav > ul {
     margin: 80px auto 20px;
 }
 
-.about-section-body {
+.about-section-body {    
     color: whitesmoke;
     width: 70%;
     text-align: justify;
@@ -304,7 +312,6 @@ nav > ul {
 
 .projects-section-header {
     margin: 100px auto 20px;
-
 }
 
 .projects-section-body {
@@ -375,13 +382,13 @@ nav > ul {
     display: flex;
     flex-direction: column;
     background-color: rgb(150, 150, 150);
+    color: whitesmoke;
     justify-content: center;
     align-items: center;
     text-align: center;
     width: 100%;
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
-    /* min-height: 90vh; */
 }
 
 .contact-section-header {
@@ -394,13 +401,23 @@ nav > ul {
     margin: 50px auto 30px;
 }
 
+.contact-grid a {
+    display:inline-flex;
+    justify-content: space-evenly;
+    width: 100px;
+}
+
+.btn-outline-secondary, .btn-outline-secondary:hover {
+    border-color: rgb(150, 150, 150) !important;
+}
 /**************** FOOTER SECTION **************/
 
 footer {
-    font-weight: 300;
     display: flex;
+    font-weight: 300;
+    height: 50px;
+    color:#475569;
     background-color: rgb(200, 200, 200);
     justify-content: space-evenly;
-    padding: 2rem;
-    /* border-top: 4px solid var(--main-red); */
+    padding: 1rem;
 }
