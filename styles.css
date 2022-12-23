@@ -2,6 +2,11 @@
 
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan&family=Roboto&display=swap");
 
+/*****************css variable ***************/
+:root {
+    --project_image: 250;
+}
+
 /**************** all html **************/
 
 * {
@@ -219,7 +224,8 @@ nav > ul {
     color: whitesmoke;
     justify-content: center;
     text-align: center;
-    height: 80vh;
+    height: 100h;
+    height: calc(var(--vh, 1vh) * 100);
 }
 
 .about-section-header {
@@ -243,7 +249,8 @@ nav > ul {
     color: whitesmoke;
     justify-content: center;
     text-align: center;
-    height: 70vh;
+    height: 100h;
+    height: calc(var(--vh, 1vh) * 100);
 }
 
 .education-section-header {
@@ -266,7 +273,8 @@ nav > ul {
     color: whitesmoke;
     justify-content: center;
     text-align: center;
-    height: 75vh;
+    height: 100h;
+    height: calc(var(--vh, 1vh) * 100);
 }
 
 .experience-section-header {
@@ -290,11 +298,13 @@ nav > ul {
     color: whitesmoke;
     justify-content: center;
     text-align: center;
-    height: 80vh;
+    height: 100h;
+    height: calc(var(--vh, 1vh) * 100);
 }
 
 .projects-section-header {
-    margin: 80px auto 20px;
+    margin: 100px auto 20px;
+
 }
 
 .projects-section-body {
@@ -305,7 +315,7 @@ nav > ul {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
     grid-gap: 4rem;
     width: 70%;
     justify-content: space-around;
@@ -330,7 +340,8 @@ nav > ul {
     color: whitesmoke;
     justify-content: center;
     text-align: center;
-    height: 80vh;
+    height: 100h;
+    height: calc(var(--vh, 1vh) * 100);
 }
 
 .skills-section-header {
@@ -368,7 +379,8 @@ nav > ul {
     align-items: center;
     text-align: center;
     width: 100%;
-    height: 80vh;
+    height: 100h;
+    height: calc(var(--vh, 1vh) * 100);
     /* min-height: 90vh; */
 }
 
