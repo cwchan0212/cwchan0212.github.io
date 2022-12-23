@@ -5,8 +5,9 @@
 /**************** all html **************/
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: inherit;
-    
 }
 
 /**************** html tag **************/
@@ -48,7 +49,6 @@ h1 {
     font-size: 50px;
 }
 
-
 h2 {
     font-weight: bold;
     color: whitesmoke;
@@ -64,7 +64,7 @@ a:visited {
 }
 
 a:hover {
-    color:burlywood;
+    color: burlywood;
     text-decoration: none;
 }
 
@@ -75,19 +75,117 @@ ul {
     list-style-type: none;
 }
 
+/**************** hamburger menu BAR **************/
+
+.header{
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.2rem 1rem;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 50px;
+    height: 10px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #ffffff;
+}
+
+
+
+.nav-list {
+    display: flex;
+    margin-right: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 0.5rem;
+}
+
+.nav-link {
+    font-size: 1rem;
+    /* font-weight: 100; */
+    color: #475569;
+}
+
+.nav-link:hover {
+    color: #482ff7;
+}
+
+.nav-list a {
+    display: block;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-list {
+        position: fixed;
+        left: -100%;
+        top: 1rem;
+        flex-direction: column;
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-list.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
 /**************** NAV BAR **************/
 
 nav {
     display: flex;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
     position: fixed;
     width: 100%;
-    top: 0;
-    left: 0;
     background-color: rgb(0, 0, 0);
     text-transform: uppercase;
     text-decoration: none;
     font-weight: bold;
+    align-items: center;
     z-index: 10;
 }
 
@@ -101,44 +199,15 @@ nav > ul {
     justify-content: space-around;
 }
 
-.nav-list {
-    display: flex;
-    margin-right: 2rem;
-  }
-
-
-  .nav-list a {
-    display: block;
-    font-size: 1rem;
-    padding: 1rem;
-  }
-
-  @media (max-width: 600px) {
-    #mobile-menu-btn {
-      display: block;
-    }
-    nav p {
-      display: none;
-    }
-    .mobile-menu {
-      display: none;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-    }
-  }
-  
 /**************** self-define SECTION **************/
 
 .myself {
-    color:coral;
+    color: coral;
 }
 
 .date {
-    color:gold  ;
+    color: gold;
 }
-
-
 
 /**************** ABOUT SECTION **************/
 
@@ -150,11 +219,11 @@ nav > ul {
     color: whitesmoke;
     justify-content: center;
     text-align: center;
-    /* height: 80vh; */
+    height: 80vh;
 }
 
-.about-section-header  {
-    margin: 100px auto 20px;
+.about-section-header {
+    margin: 80px auto 20px;
 }
 
 .about-section-body {
@@ -174,11 +243,11 @@ nav > ul {
     color: whitesmoke;
     justify-content: center;
     text-align: center;
-    /* height: 70vh; */
+    height: 70vh;
 }
 
-.education-section-header  {
-    margin: 100px auto 20px;
+.education-section-header {
+    margin: 80px auto 20px;
 }
 
 .education-section-body {
@@ -197,14 +266,14 @@ nav > ul {
     color: whitesmoke;
     justify-content: center;
     text-align: center;
-    /* height: 80vh; */
+    height: 75vh;
 }
 
-.experience-section-header  {
-    margin: 100px auto 20px;
+.experience-section-header {
+    margin: 80px auto 20px;
 }
 
-.experience-section-body  {
+.experience-section-body {
     text-align: justify;
     width: 70%;
     /* margin: auto; */
@@ -219,13 +288,13 @@ nav > ul {
     width: 100%;
     background-color: rgb(110, 110, 110);
     color: whitesmoke;
-    padding: 0px;
     justify-content: center;
     text-align: center;
+    height: 80vh;
 }
 
 .projects-section-header {
-    margin: 100px auto 20px;
+    margin: 80px auto 20px;
 }
 
 .projects-section-body {
@@ -239,7 +308,7 @@ nav > ul {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 4rem;
     width: 70%;
-    justify-content:space-around;
+    justify-content: space-around;
     max-width: 1280px;
     margin: 30px auto;
     text-align: center;
@@ -261,28 +330,32 @@ nav > ul {
     color: whitesmoke;
     justify-content: center;
     text-align: center;
-    /* height: 80vh; */
+    height: 80vh;
 }
 
 .skills-section-header {
-    margin: 100px auto 20px;
+    margin: 80px auto 20px;
 }
 .skills-grid {
     display: flex;
-    text-align: left;
-    justify-content: center;
-    /* columns: 2;
-    flex-direction: column;
-    
-    margin: 20px auto; */
+    margin: 20px auto 20px;
+
 }
 
 .skills-grid-soft {
+    display: flex;
     width: 50%;
+    text-align: left;
+    justify-content: space-around;
+    padding: 10px;
 }
 
 .skills-grid-tech {
-    width: 50%
+    display: flex;
+    width: 50%;
+    text-align: left;
+    justify-content: space-around;
+    padding: 10px;
 }
 
 /**************** CONTACT SECTION **************/
@@ -295,12 +368,12 @@ nav > ul {
     align-items: center;
     text-align: center;
     width: 100%;
-    height: 80vh;   
+    height: 80vh;
     /* min-height: 90vh; */
 }
 
 .contact-section-header {
-    margin: 10px auto 30px;
+    margin: 80px auto 20px
 }
 
 .contact-section-body {

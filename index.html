@@ -34,35 +34,41 @@ code (in GitHub).
         <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0"/>
         <title>Persoal Portfolio jpgage</title>
         <link href="./styles.css" rel="stylesheet" />
+        
     </head>
     <body>
         <div class="portfolio-container">
             
             <!-- Start NAV -->
-            <header>
+            <header class="header">
                 
-                <nav id="navbar" class="nav">
+                <nav id="navbar" class="navbar">
                     <ul class="nav-list">
-                        <li>
-                            <a href="#about">About</a>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link">About</a>
                         </li>
 
-                        <li>
-                            <a href="#education">Education</a>
+                        <li class="nav-item">
+                            <a href="#education" class="nav-link">Education</a>
                         </li>
-                        <li>
-                            <a href="#experience">Experience</a>
+                        <li class="nav-item">
+                            <a href="#experience" class="nav-link">Experience</a>
                         </li>
-                        <li>
-                            <a href="#projects">Projects</a>
+                        <li class="nav-item">
+                            <a href="#projects" class="nav-link">Projects</a>
                         </li>
-                        <li>
-                            <a href="#skills">Skills</a>
+                        <li class="nav-item">
+                            <a href="#skills" class="nav-link">Skills</a>
                         </li>
-                        <li>
-                            <a href="#contact">Contact</a>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contact</a>
                         </li>
                     </ul>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
                 </nav>
             </header>
 
@@ -336,7 +342,7 @@ code (in GitHub).
                     <img src="./images/skills.jpg" border="0" width="300" />
                 </div>
                 <div class="skills-grid">
-                    <div class="skill-grid-soft">
+                    <div class="skills-grid-soft">
                     <h3>Soft Skills</h3>
                     <ul>
                         <li>Problem Solving</li>
@@ -345,10 +351,10 @@ code (in GitHub).
                         <li>Attention to detail</li>
                         <li>Customer Services</li>
                         <li>Project Management</li>
-                        <li>Tools: Google, Microsoft, Zoom, Skype, Trello</li>
+                        <li>Tools: Team, Zoom, Meet, Skype, Trello</li>
                     </ul>
                 </div>
-                <div class="skill-grid-tech">
+                <div class="skills-grid-tech">
                     <h3>Tech Stack</h3>
                     <ul>
                         <li>Python / Java</li>
@@ -400,5 +406,6 @@ code (in GitHub).
             </footer>
             <!-- End: Footer section-->
         </div>
+        <script src="./main.js"></script>
     </body>
 </html>
