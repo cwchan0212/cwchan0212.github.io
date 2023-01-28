@@ -1,14 +1,18 @@
 body {
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   --bs-primary: #1c3dca;
-  --bs-primary-rgb: 28,61,202;
+  --bs-primary-rgb: 28, 61, 202;
   --bs-info: #02aaff;
-  --bs-info-rgb: 2,170,255;
+  --bs-info-rgb: 2, 170, 255;
   --bs-dark: #131416;
-  --bs-dark-rgb: 19,20,22;
+  --bs-dark-rgb: 19, 20, 22;
   --bs-body-color: var(--bs-white);
   --bs-body-bg: var(--bs-dark);
   --bs-body-font-weight: 300;
+}
+
+.nav-link {
+  font-weight: normal;
 }
 
 .container {
@@ -18,7 +22,7 @@ body {
 }
 
 .text-badge {
-  padding: .1em .4em;
+  padding: 0.1em 0.4em;
   background: var(--bs-dark);
 }
 
@@ -37,6 +41,15 @@ footer {
   background: var(--bs-gray-900);
 }
 
-.skill {
+.figure {
+  color: coral;
 }
 
+.linkage {
+  color: lightblue;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
