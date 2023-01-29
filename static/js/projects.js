@@ -65,7 +65,7 @@ const projects = [
     {
       id: 8,
       name: "Capstone Project 5: Bookstore Management System (Flask)",
-      description: "Built a bookstore management system that allows a clerk to manage the store's inventory by adding, updating, deleting, and searching for books in the database.",
+      description: "Adapted from a previous capstone project, a web application using Flask and SQLite that allows users to manage the store's inventory by adding, updating, deleting, and searching for books in the database.",
       thumbnail: "08.png",
       github: "https://github.com/cwchan0212/hyperiondev-capstone5-flask",
       preview: "https://6gg9.short.gy/ZQPGgN",
