@@ -88,4 +88,13 @@ const projects = [
       github: "https://github.com/cwchan0212/self-staff-scheduler",
       preview: "https://6gg9.short.gy/8D4TnI",
     },
+
+    {
+      id: 11,
+      name: "Side Project - URL Shortener",
+      description: "Generates shortened URLs for users and records the visitor's IP address and user agent. The analytics dashboard features comprehensive metrics and statistics, such as weekly visits, bounce rate, and visitor origin. ",
+      thumbnail: "11.png",
+      github: "https://github.com/cwchan0212/self-url-shortener-flask",
+      preview: "https://6gg9.short.gy/zgZzsZ",
+    },
   ];
