@@ -1,4 +1,5 @@
 let displayIndex = 0;
+projects.sort((a, b) => b.id - a.id);
 $(document).ready(function () {
   updateView();
   let currentIndex = 0;
